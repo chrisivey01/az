@@ -4,6 +4,7 @@ I've used redux/axios to obtain the data from the API that was provided, and use
 
 With the items provided by the API, you have a liked/favorite list and can filter down by them. Everything is dynamic in regards. 
 
+I still have two warnings that I could not fix because I broke the API. :( And without the API I can't use SCSS, well I can but it'd look weird.
 
 ![Alt text](/src/images/Oops.PNG "Oops")
 
