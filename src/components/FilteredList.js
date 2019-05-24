@@ -3,12 +3,16 @@ import React from 'react'
 const FilteredList = props => {
     return (
         <div className="favoriteList">
-            <label>Favorited List</label>
-            <ul>
-                {props.filteredList.map((item,i) => {
-                    return <li key={i}> {item.name} </li>
-                })}
-            </ul>
+            <div>
+                <label className="bold-text">Favorited List</label>
+            </div>
+            <div>
+                <ul>
+                    {props.filteredList.map((item, i) => {
+                        return <li key={i}> {item.name} </li>
+                    })}
+                </ul>
+            </div>
         </div>
     )
 }

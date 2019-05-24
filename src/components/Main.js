@@ -9,7 +9,6 @@ import { Route } from "react-router-dom";
 
 
 const Main = props => {
-
     useEffect(() => {
         props.fetchData();
     }, [])
@@ -27,21 +26,21 @@ const Main = props => {
 
     const filterItems = () => {
         //obtain index for recollection into data
-        for(let i = 0; i<filteredList.length; i++){
-            setObtainFilter([...data, filteredList[i]])
+        for (let i = 0; i < filteredList.length; i++) {
+            setObtainFilter([...obtainFilter, filteredList[i]])
         }
-        for(let i = data.length - 1; i >=0 ; i--){
-            if(!filteredList.includes(data[i])){
-                data.splice(i,1)
+        for (let i = data.length - 1; i >= 0; i--) {
+            if (!filteredList.includes(data[i])) {
+                data.splice(i, 1)
                 // i = 0;
             }
-        }        
+        }
     }
 
-    const resetItems = () => {        
+    const resetItems = () => {
         //reset of liked items
         setFilteredList([]);
-        
+
         //call redux store again to retrieve data.
         props.fetchData();
     }
@@ -98,11 +97,15 @@ const Main = props => {
                 }
             </div>
             <div>
-                <FilteredList
-                    filteredList={filteredList}
-                />
-                <button onClick={filterItems}>Filter</button>
-                <button onClick={resetItems}>Reset</button>
+                <div className="filtered-list">
+                    <FilteredList
+                        filteredList={filteredList}
+                    />
+                </div>
+                <div>
+                    <button onClick={filterItems}>Filter</button>
+                    <button onClick={resetItems}>Reset</button>
+                </div>
 
             </div>
         </div>

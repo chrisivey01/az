@@ -2,7 +2,7 @@ import { FETCH_DATA} from './types';
 import axios from 'axios'
 
 export const fetchData = () => dispatch =>{
-    axios('http://api.jsonbin.io/b/5ac79b198daf792844bf3523')
+    axios('https://api.jsonbin.io/b/5ce80d1fb4565f1948041970')
     .then(res => dispatch({
         type:FETCH_DATA,
         data: res

@@ -3,8 +3,8 @@ import React from 'react'
 const Display = props => {
     return (
         <div className="container">
-            <div className="row row-centered">
-                <label >Click Image to like and filter your list!</label>
+            <div className="label-center">
+                <label >Click an image to add to your favorites, to filter down your search.</label>
             </div>
 
             <div>

@@ -8,7 +8,7 @@ const Item = (props) => {
             <div>
                 <div className="image-handler">
                     <Link to={`/${props.name}`}>
-                        <img className="image-row" src={props.image} alt="autozone images" />
+                        <img className="images-on-row" src={props.image} alt="autozone images" />
                     </Link>
                     <div>
                         <label>{props.name}</label>
