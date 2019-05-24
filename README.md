@@ -1,3 +1,13 @@
+This application was done with React/Redux/Axios/React Router.
+
+I've used redux/axios to obtain the data from the API that was provided, and used the main core components of React to show proficiency in this area as well.
+
+With the items provided by the API, you have a liked/favorite list and can filter down by them. Everything is dynamic in regards. 
+
+
+![Alt text](/src/images/Oops.PNG "Oops")
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

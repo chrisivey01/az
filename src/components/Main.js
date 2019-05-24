@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux';
 import { fetchData } from '../actions/posts';
 import Item from '../components/Item';
@@ -14,8 +14,7 @@ const Main = props => {
         props.fetchData();
     }, [])
 
-    let { data } = props.posts.items;
-    let { nonChangedData } = props.posts.items;
+    const { data } = props.posts.items;
 
     const [filteredList, setFilteredList] = useState([]);
     const [obtainFilter, setObtainFilter] = useState([]);

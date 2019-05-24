@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+
 const Display = props => {
-
-
     return (
         <div className="container">
             <div className="row row-centered">
@@ -10,7 +9,7 @@ const Display = props => {
 
             <div>
                 <div>
-                    <img src={props.image} onClick={()=>props.likedImageHandler(props.iterator)} />
+                    <img src={props.image} alt={props.name} onClick={()=>props.likedImageHandler(props.iterator)} />
                 </div>
                 <div>
                     <label>{props.name}!</label>

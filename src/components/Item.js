@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link, Route } from 'react-router-dom';
-import Display from './Display'
-import Main from './Main'
+import { Link } from 'react-router-dom';
+
 
 const Item = (props) => {
     return (

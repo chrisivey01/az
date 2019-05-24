@@ -1,4 +1,4 @@
-import { FETCH_DATA, LIKE_DATA } from './types';
+import { FETCH_DATA} from './types';
 import axios from 'axios'
 
 export const fetchData = () => dispatch =>{

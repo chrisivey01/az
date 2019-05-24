@@ -1,4 +1,4 @@
-import { FETCH_DATA, LIKE_DATA } from '../actions/types';
+import { FETCH_DATA } from '../actions/types';
 
 const initialState = {
     items: [],
